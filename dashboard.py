@@ -263,7 +263,7 @@ if {'Harapan Lama Sekolah', 'Rata-rata Lama Sekolah'}.issubset(df['indikator'].u
         color='tahun',
         color_discrete_sequence=px.colors.sequential.Blues,
         hover_data=['nama_provinsi'],
-        trendline="ols"
+        # trendline="ols"
     )
     fig_scatter.update_layout(
         height=400,
