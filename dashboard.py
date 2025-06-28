@@ -53,12 +53,12 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("data_visdat.csv")
+        df = pd.read_csv("Data_Visdat.csv")
         df['tahun'] = df['tahun'].astype(str)
         df['nilai'] = pd.to_numeric(df['nilai'], errors='coerce')
         return df
     except FileNotFoundError:
-        st.error("File 'data_visdat.csv' tidak ditemukan. Pastikan file ada di direktori yang sama!")
+        st.error("File 'Data_Visdat.csv' tidak ditemukan. Pastikan file ada di direktori yang sama!")
         return pd.DataFrame()
 
 df = load_data()
